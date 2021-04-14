@@ -31,7 +31,7 @@ class UsersTableSeeder extends Seeder
         ]);   
         $user= User::create( [
             'name' => 'Generic User',
-            'email'=>'user2@gmail.com',
+            'email'=>'user@gmail.com',
             'password'=>Hash::make('password')
         ]);
 
