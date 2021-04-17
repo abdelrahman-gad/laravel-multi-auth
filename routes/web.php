@@ -25,3 +25,10 @@ Route::namespace('Admin')->prefix('admin')->name('admin.')->group(function(){
     Route::resource('users','UserController',['except'=>['create','show']]);
 });
 
+
+Route::get('admin/home',function(){
+    return 'Admin home view ';
+})->middleware('auth');
+Route::get('author/home',function(){
+    return 'Admin home view ';
+})->middleware('auth')->name('author.home');
